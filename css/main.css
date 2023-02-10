@@ -1,0 +1,115 @@
+/*
+custom elements:
+    * .description - generic object description
+    * .headeroption - what you will usually see as "Faq", "Documentation", etc in the header
+
+*/
+
+@font-face {
+    font-family: 'Metropolis-SemiBold';
+    src: local('Metropolis Semi Bold'), local('Metropolis-Semi-Bold'),
+        url('Metropolis-SemiBold.woff2') format('woff2'),
+        url('Metropolis-SemiBold.woff') format('woff'),
+        url('Metropolis-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metropolis-Medium';
+    src: local('Metropolis Medium'), local('Metropolis-Medium'),
+        url('Metropolis-Medium.woff2') format('woff2'),
+        url('Metropolis-Medium.woff') format('woff'),
+        url('Metropolis-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metropolis-Bold';
+    src: local('Metropolis Bold'), local('Metropolis-Bold'),
+        url('Metropolis-Bold.woff2') format('woff2'),
+        url('Metropolis-Bold.woff') format('woff'),
+        url('Metropolis-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+#hugefont {
+    font-size: 60px;
+    color: rgb(250, 250, 250)
+}
+
+body {
+    width: 100%;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Metropolis-Medium', sans-serif;
+    color: #b4b4b4;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #222222;
+}
+
+label {
+    color: #D5D5D5;
+}
+section {
+    background: rgba(255, 255, 255, 0);
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.rainbow{
+        animation: rainbow 10s linear;
+        animation-iteration-count: infinite;
+}
+@keyframes rainbow{
+        100%,0%{
+            color: rgb(255, 0, 0);
+        }
+        8%{
+            color: rgb(255,127,0);
+        }
+        16%{
+            color: rgb(255,255,0);
+        }
+        25%{
+            color: rgb(127,255,0);
+        }
+        33%{
+            color: rgb(0,255,0);
+        }
+        41%{
+            color: rgb(0,255,127);
+        }
+        50%{
+            color: rgb(0,255,255);
+        }
+        58%{
+            color: rgb(0,127,255);
+        }
+        66%{
+            color: rgb(0,0,255);
+        }
+        75%{
+            color: rgb(127,0,255);
+        }
+        83%{
+            color: rgb(255,0,255);
+        }
+        91%{
+            color: rgb(255,0,127);
+        }
+}
