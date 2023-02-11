@@ -72,44 +72,73 @@ section {
     transform: translate(-50%, -50%)
 }
 .rainbow{
-        animation: rainbow 10s linear;
-        animation-iteration-count: infinite;
+        
+    animation: rainbow 10s linear;
+    animation-iteration-count: infinite;
 }
 @keyframes rainbow{
-        100%,0%{
-            color: rgb(255, 0, 0);
-        }
-        8%{
-            color: rgb(255,127,0);
-        }
-        16%{
-            color: rgb(255,255,0);
-        }
-        25%{
-            color: rgb(127,255,0);
-        }
-        33%{
-            color: rgb(0,255,0);
-        }
-        41%{
-            color: rgb(0,255,127);
-        }
-        50%{
-            color: rgb(0,255,255);
-        }
-        58%{
-            color: rgb(0,127,255);
-        }
-        66%{
-            color: rgb(0,0,255);
-        }
-        75%{
-            color: rgb(127,0,255);
-        }
-        83%{
-            color: rgb(255,0,255);
-        }
-        91%{
-            color: rgb(255,0,127);
-        }
+    100%,0%{
+        color: rgb(255, 0, 0);
+        border-color: rgb(255, 0, 0);
+    }
+    8%{
+        color: rgb(255,127,0);
+        border-color: rgb(255,127,0);
+    }
+    16%{
+        color: rgb(255,255,0);
+        border-color: rgb(255,255,0);
+    }
+    25%{
+        color: rgb(127,255,0);
+        border-color: rgb(127,255,0);
+    }
+    33%{
+        color: rgb(0,255,0);
+        border-color: rgb(0,255,0);
+    }
+    41%{
+        color: rgb(0,255,127);
+        border-color: rgb(0,255,127);
+    }
+    50%{
+        color: rgb(0,255,255);
+        border-color: rgb(0,255,255);
+    }
+    58%{
+        color: rgb(0,127,255);
+        border-color: rgb(0,127,255);
+    }
+    66%{
+        color: rgb(0,0,255);
+        border-color: rgb(0,0,255);
+    }
+    75%{
+        color: rgb(127,0,255);
+        border-color: rgb(127,0,255);
+    }
+    83%{
+        color: rgb(255,0,255);
+        border-color: rgb(255,0,255);
+    }
+    91%{
+        color: rgb(255,0,127);
+        border-color: rgb(255,0,127);
+    }
+}
+.nubex {
+    color: #000000;
+    background-color: #3b3b3b; /* Цвет фона */
+    font-size: 16px;
+    border-color: #3b3b3b;
+    padding: 0.5em 2em; /* Отступ от текста до рамки */
+    border-radius: 15px;
+    margin: 0 auto; 
+    display: block;
+}
+.nubex:active {
+    background-color: #000000; /* Цвет кнопки при нажатии */
+}
+.nubex:hover {
+    background-color: #2b2b2b; /* Цвет кнопки при наведении курсора */
 }
